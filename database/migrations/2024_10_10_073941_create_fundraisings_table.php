@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('thumbnail');
             $table->text('about');
             $table->unsignedBigInteger('target_amount');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

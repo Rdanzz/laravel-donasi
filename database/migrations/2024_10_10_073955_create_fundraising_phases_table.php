@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->boolean('photo');
             $table->text('notes');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

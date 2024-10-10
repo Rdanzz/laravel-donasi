@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('bank_account_name');
             $table->string('bank_account_number');
             $table->string('proof');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
