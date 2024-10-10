@@ -9,4 +9,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class FundraisingWithdraw extends Model
 {
     use HasFactory, SoftDeletes;
+
+    public function fundraising()
+    {
+        return $this->belongsTo(Fundraising::class);
+    }
+
+    public function fundraiser()
+    {
+        return $this->belongsTo(Fundraiser::class);
+    }
 }

@@ -46,4 +46,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function fundraiser()
+    {
+        return $this->hasOne(Fundraiser::class);
+    }
 }

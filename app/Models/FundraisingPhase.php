@@ -9,4 +9,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class FundraisingPhase extends Model
 {
     use HasFactory, SoftDeletes;
+
+    public function fundraising()
+    {
+        return $this->belongsTo(Fundraising::class);
+    }
 }
