@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('fundraisers', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->boolean('is_active');
             $table->timestamps();
         });
     }
