@@ -18,7 +18,7 @@
               
                     <div class="item-card flex flex-row justify-between items-center">
                         <div class="flex flex-row items-center gap-x-3">
-                            <img src="{{ Storage::url($category->icon) }}" alt="" class="rounded-2xl object-cover w-[120px] h-[90px]">
+                            <img src="{{ Storage::url($category->icon) }}" alt="" class="rounded-2xl object-cover w-[100px] h-[90px]">
                             <div class="flex flex-col">
                                 <h3 class="text-indigo-950 text-xl font-bold">{{ $category->name }}</h3>
                             </div>
