@@ -42,7 +42,7 @@
                     </div>
 
                 @empty
-                    <p>Belum ada data terbaru, silahakn ditambahkan</p>
+                    <p class="text-center">Belum ada data terbaru, silahakn ditambahkan</p>
                 @endforelse
             </div>
         </div>
