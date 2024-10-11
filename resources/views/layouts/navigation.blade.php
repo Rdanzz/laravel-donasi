@@ -15,8 +15,8 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    @role('owner')
 
+                    @role('owner')
                     <x-nav-link :href="route('admin.categories.index')" :active="request()->routeIs('admin.categories.index')">
                         {{ __('Categories') }}
                     </x-nav-link>
@@ -29,14 +29,15 @@
                     @endrole
 
                     @role('owner|fundraiser')
-
                     <x-nav-link :href="route('admin.fundraising.index')" :active="request()->routeIs('admin.fundraisings.index')">
                         {{ __('Fundraisings') }}
                     </x-nav-link>
                     @endrole
+
                     <x-nav-link :href="route('admin.fundraisers.index')" :active="request()->routeIs('admin.fundraisers.index')">
                         {{ __('Fundraisers') }}
                     </x-nav-link>
+
                     @role('fundraiser')
                     <x-nav-link :href="route('admin.my-withdraw')" :active="request()->routeIs('admin.my-withdraw')">
                         {{ __('My Withdraw') }}
